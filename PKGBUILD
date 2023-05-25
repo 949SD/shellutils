@@ -8,7 +8,21 @@ url="https://github.com/dk949/$pkgname"
 license=('MIT')
 depends=()
 makedepends=()
-optdepends=()
+optdepends=(
+    'bat: for obat and wbat'
+    'clang: for ctfix'
+    'curl: for dict'
+    'docker: for docker-clean-images and docker-clean-ps'
+    'ffmpeg: for duration and play'
+    'git: for license'
+    'gnupg: for encryptdir and decryptdir'
+    'grub: for update-grub'
+    'python: for tocgen'
+    'tar: for encryptdir and decryptdir'
+    'util-linux: for run (deprecated)'
+    'xorg-xprop: for wminfo'
+    'zstd: for getcore'
+)
 provides=(
     'bak'
     'cleanlatex'
