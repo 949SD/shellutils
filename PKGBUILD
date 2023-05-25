@@ -1,7 +1,7 @@
 # Maintainer: David K david.dk949@gmail.com
 pkgname=shellutils
 pkgver=unknown
-pkgrel=0
+pkgrel=2
 pkgdesc="Open the EDITOR. Write some code. Have it executed."
 arch=('any')
 url="https://github.com/dk949/$pkgname"
