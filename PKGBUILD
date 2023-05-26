@@ -1,10 +1,11 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=shellutils
+_pkgname=shellutils
+pkgname="${_pkgname}-949sd"
 pkgver=unknown
-pkgrel=2
+pkgrel=0
 pkgdesc="Open the EDITOR. Write some code. Have it executed."
 arch=('any')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 depends=()
 makedepends=()
@@ -58,7 +59,7 @@ provides=(
     'wcat'
     'wminfo'
 )
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
