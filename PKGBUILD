@@ -2,8 +2,8 @@
 _pkgname=shellutils
 pkgname="${_pkgname}-949sd"
 pkgver=unknown
-pkgrel=0
-pkgdesc="Open the EDITOR. Write some code. Have it executed."
+pkgrel=2
+pkgdesc="variaous shell utilities"
 arch=('any')
 url="https://github.com/dk949/$_pkgname"
 license=('MIT')
@@ -18,6 +18,7 @@ optdepends=(
     'git: for license'
     'gnupg: for encryptdir and decryptdir'
     'grub: for update-grub'
+    'poppler: for pdfcounter'
     'python: for tocgen'
     'tar: for encryptdir and decryptdir'
     'util-linux: for run (deprecated)'
@@ -46,6 +47,7 @@ provides=(
     'license'
     'lstype'
     'mkfile'
+    'pdfcounter'
     'obat'
     'out'
     'play'
