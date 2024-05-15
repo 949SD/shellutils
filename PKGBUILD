@@ -1,13 +1,14 @@
 # Maintainer: David K david.dk949@gmail.com
 _pkgname=shellutils
 pkgname="${_pkgname}-949sd"
-pkgver=unknown
-pkgrel=2
+pkgver=v2.5.0_12_g224c3cb
+pkgrel=1
 pkgdesc="variaous shell utilities"
 arch=('any')
 url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 depends=()
+options=('!debug')
 makedepends=()
 optdepends=(
     'bat: for obat and wbat'
