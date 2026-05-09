@@ -1,7 +1,7 @@
 # Maintainer: David K david.dk949@gmail.com
 _pkgname=shellutils
 pkgname="${_pkgname}-949sd"
-pkgver=v2.5.0_12_g224c3cb
+pkgver=unknown
 pkgrel=1
 pkgdesc="variaous shell utilities"
 arch=('any')
