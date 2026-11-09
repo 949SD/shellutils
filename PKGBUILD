@@ -1,4 +1,4 @@
-# Maintainer: David K david.dk949@gmail.com
+# Maintainer: David K dk949.david@gmail.com
 _pkgname=shellutils
 pkgname="${_pkgname}-949sd"
 pkgver=unknown
@@ -7,57 +7,56 @@ pkgdesc="variaous shell utilities"
 arch=('any')
 url="https://github.com/dk949/$_pkgname"
 license=('MIT')
-depends=()
+depends=('gcc-libs')
 options=('!debug')
-makedepends=()
+makedepends=('git')
 optdepends=(
+    'bash: for mkssh'
     'bat: for obat and wbat'
+    'binutils: for obat'
+    'claude-code: for ask-claude'
     'clang: for ctfix'
     'curl: for dict'
     'docker: for docker-clean-images and docker-clean-ps'
-    'ffmpeg: for duration and play'
+    'ffmpeg: for vid-duration and vid-play'
     'git: for license'
-    'gnupg: for encryptdir and decryptdir'
     'grub: for update-grub'
+    'inotify-tools: for waitfor'
+    'jq: for ask-claude'
+    'pacman-contrib: for packageinfo'
     'poppler: for pdfcounter'
     'python: for tocgen'
-    'tar: for encryptdir and decryptdir'
-    'util-linux: for run (deprecated)'
+    'sshfs: for mkssh'
+    'systemd: for timezone'
     'xorg-xprop: for wminfo'
-    'zstd: for getcore'
 )
 provides=(
+    'ask-claude'
     'bak'
-    'cleanlatex'
     'colorcheck'
-    'cpdir'
     'ctfix'
-    'decryptdir'
     'dict'
     'docker-clean-images'
     'docker-clean-ps'
-    'double'
-    'duration'
-    'encryptdir'
-    'execf'
     'extrename'
     'floatdump'
-    'forever'
     'fsize'
-    'getcore'
     'license'
+    'line-range'
     'lstype'
     'mkfile'
-    'pdfcounter'
+    'mkssh'
     'obat'
     'out'
-    'play'
-    'rmextdup'
+    'packageinfo'
+    'pdfcounter'
     'rmfile'
-    'run'
-    'sobrowser'
+    'timezone'
     'tocgen'
     'update-grub'
+    'vid-duration'
+    'vid-play'
+    'waitfor'
     'wbat'
     'wcat'
     'wminfo'
